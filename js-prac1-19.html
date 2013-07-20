@@ -29,20 +29,25 @@
 			<div>
 				<script type="text/javascript">
 					var x = window.prompt("文字をいれて？", "");
+					var result = '';
 					
 					switch(x) {
 						case 'A':
-							window.alert("◎");
+							result = '◎';
 							break;
 						case 'B':
-							window.alert("○");
+							result = '○';
 							break;
 						case 'c':
-							window.alert("△");
+							result = '△';
 							break;
 						default:
-							window.alert("×");
+							result = '×';
 					}
+
+					console.log(result);					
+					window.alert(result);
+					document.write('<p><strong>' + result + '</strong></p>');
 				</script>
 			</div>
 			<footer>
